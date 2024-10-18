@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f3ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact-section {
+    text-align: center;
+    background: linear-gradient(135deg, #f1f3ff, #e0d4ff);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2em;
+    color: #3a2c89;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+ul li {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+ul li a:hover {
+    color: #6c63ff;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.email-btn, .instagram-btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.email-btn {
+    background-color: #6c63ff;
+    color: #fff;
+    border: 2px solid #6c63ff;
+}
+
+.instagram-btn {
+    background-color: transparent;
+    color: #6c63ff;
+    border: 2px solid #6c63ff;
+}
+
+.email-btn:hover {
+    background-color: #fff;
+    color: #6c63ff;
+}
+
+.instagram-btn:hover {
+    background-color: #6c63ff;
+    color: #fff;
+}

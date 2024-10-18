@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #B8E6FB, #D4A5FC);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    align-items: center; /* Centers the gallery and button */
+    
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.gallery-item img:hover {
+    transform: scale(1.1); /* Slightly enlarges the image */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Adds a deeper shadow */
+}
+
+.gallery-item p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 0.95em;
+    text-decoration: none;
+    font-weight: bold;
+}
+ 
+.primary {
+    background-color: #4e44a7; 
+    color: white;
+}
+ 
+.secondary {
+    background-color: #eae8f2;
+    color: #4e44a7;
+    border: 1px solid #4e44a7;
+}
+
+.featured-button {
+    background-color: #5B4DC4; /* Matches the purple background */
+    color: white;              /* White text color */
+    border: none;              /* No border */
+    padding: 10px 20px;        /* Padding for size */
+    font-size: 16px;           /* Font size similar to your image */
+    font-family: Arial, sans-serif; /* Similar font */
+    border-radius: 5px;        /* Rounded corners */
+    cursor: pointer;           /* Pointer on hover */
+}
+
+.featured-button:hover {
+    background-color: #4a3f9c; /* Slightly darker purple on hover */
+}
+
+.button-container {
+    margin-top: 20px;
+}
